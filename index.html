@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>陳孟揚 Frankie Chen ｜ UIUX 設計師作品集</title>
+    <!-- Figma 設計稿使用 Gothic A1（拉丁/數字）與 Noto Sans TC（中文），這裡直接引入 Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="page" id="page-root">
+      <!-- ===== Hero 區塊：導覽列 + 環繞文字 Logo + 主標題 ===== -->
+      <section class="hero" id="hero" data-name="hero-section">
+        <div class="grid-lines" aria-hidden="true"></div>
+
+        <header class="navbar" data-name="navbar">
+          <div class="navbar__brand">
+            <span class="navbar__dot"></span>
+            <span class="navbar__title">Frankie Chen’s Portfolio</span>
+          </div>
+          <nav class="navbar__links">
+            <a href="#about">關於</a>
+            <a href="#projects">作品</a>
+            <a href="#skills">能力</a>
+            <a href="#experience">經歷</a>
+            <a href="#contact">聯絡</a>
+          </nav>
+        </header>
+
+        <!-- 環繞文字 Logo：直接使用 Figma UI KIT 頁面 LOGO 元件(126:195)匯出的 PNG -->
+        <img class="orbit-logo" src="/images/logo.png" alt="F.C — Frankie Chen · UIUX Designer" data-name="LOGO" />
+
+        <div class="hero__content" data-name="hero-content">
+          <div class="hero__badge-group">
+            <span class="hero__badge">PORTFOLIO</span>
+            <h1 class="hero__name">陳孟揚</h1>
+            <p class="hero__name-en">Frankie Chen</p>
+          </div>
+          <p class="hero__role">
+            <span class="hero__role--primary">UIUX設計師</span>
+            <span class="hero__role-sep">/</span>
+            <span class="hero__role--secondary">產品設計師</span>
+          </p>
+        </div>
+
+        <div class="hero__scroll">
+          <span>SCROLL</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 5L7 10L12 5" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+      </section>
+
+      <!-- ===== 關於我 ===== -->
+      <section class="section section--tint" id="about" data-name="about-section">
+        <div class="section-inner">
+          <header class="section-header">
+            <div class="section-header__index">
+              <span>00</span>
+              <span class="section-header__rule"></span>
+            </div>
+            <div class="section-header__titles">
+              <h2>關於我</h2>
+              <p>About Me</p>
+            </div>
+            <div class="section-header__line"></div>
+          </header>
+
+          <div class="about">
+            <div class="about__image-frame">
+              <div class="about__image-border" aria-hidden="true"></div>
+              <img
+                class="about__image"
+                src="https://www.figma.com/api/mcp/asset/b1fc7255-45db-4a30-90d8-124a1f726626"
+                alt="陳孟揚 Frankie Chen 個人照"
+              />
+            </div>
+            <div class="about__content">
+              <h3 class="about__heading">從測試到設計，<br />9 年打造的全棧設計思維</h3>
+              <div class="about__paragraphs">
+                <p>我的職涯從軟體測試開始。在超過 9 年的工作經驗中，我參與過各種企業系統與產品開發，深入理解需求分析、問題追蹤，以及跨部門協作的挑戰。</p>
+                <p>後來我意識到：我不只想找出問題，更想透過設計改善問題。因此逐步將測試、產品與設計能力結合，成為能橫跨需求、設計與開發溝通的設計師。</p>
+                <p>現在，我持續探索 AI 如何改變產品設計流程，打造兼具商業價值、使用體驗與 AI 能力的產品。</p>
+              </div>
+              <div class="about__stats">
+                <div class="about__stat">
+                  <span class="about__stat-label">UIUX經驗</span>
+                  <span class="about__stat-value">2年+</span>
+                </div>
+                <span class="about__stat-divider" aria-hidden="true"></span>
+                <div class="about__stat">
+                  <span class="about__stat-label">參與專案</span>
+                  <span class="about__stat-value">5個+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 作品集 ===== -->
+      <section class="section" id="projects" data-name="projects-section">
+        <div class="section-inner">
+          <header class="section-header">
+            <div class="section-header__index">
+              <span>01</span>
+              <span class="section-header__rule"></span>
+            </div>
+            <div class="section-header__titles">
+              <h2>作品集</h2>
+              <p>Projects</p>
+            </div>
+            <div class="section-header__line"></div>
+          </header>
+
+          <div class="projects-grid">
+            <!-- 卡片 1：考勤管理系統（直接使用 Figma UI KIT「attendance-system-showcase」匯出圖，可點擊進入詳情頁） -->
+            <a class="project-card" href="project-attendance.html">
+              <div class="project-card__thumb">
+                <img src="/images/attendance-system-showcase.png" alt="考勤管理系統畫面預覽" />
+              </div>
+              <div class="project-card__body">
+                <h3>考勤管理系統</h3>
+                <p>協助企業管理員工出勤、排班與工時紀錄，降低管理成本、提升作業效率。</p>
+              </div>
+              <div class="project-card__tags">
+                <span class="tag">Figma</span>
+                <span class="tag">FigJam</span>
+                <span class="tag">Drawio</span>
+              </div>
+            </a>
+
+            <!-- 卡片 2：麻將計分器（直接使用 Figma UI KIT「mahjong-app-thumbnail」匯出圖，可點擊進入詳情頁） -->
+            <a class="project-card" href="project-mahjong.html">
+              <div class="project-card__thumb">
+                <img src="/images/mahjong-app-thumbnail.png" alt="麻將計分器 App 畫面預覽" />
+              </div>
+              <div class="project-card__body">
+                <h3>麻將計分器</h3>
+                <p>為免於手動記錄每局金額、自摸及放槍等次數而設計。用戶可隨時查閱完整歷史紀錄，並於結算時生成排行榜，提升遊戲體驗的專業性與趣味性。</p>
+              </div>
+              <div class="project-card__tags">
+                <span class="tag">Figma</span>
+                <span class="tag">Claude</span>
+                <span class="tag">VS Code</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">Netlify</span>
+              </div>
+            </a>
+
+            <!-- 卡片 3：其他作品（直接使用 Figma UI KIT「ltc-system-thumbnail」匯出圖，可點擊進入作品總覽頁） -->
+            <a class="project-card" href="works-overview.html">
+              <div class="project-card__thumb">
+                <img src="/images/ltc-system-thumbnail.png" alt="長照系統畫面預覽" />
+              </div>
+              <div class="project-card__body">
+                <h3>其他作品</h3>
+                <p>小專案或其他比較平面設計類的作品</p>
+              </div>
+              <div class="project-card__tags">
+                <span class="tag">Figma</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 設計能力與工具 ===== -->
+      <section class="section section--tint" id="skills" data-name="skills-section">
+        <div class="section-inner">
+          <header class="section-header">
+            <div class="section-header__index">
+              <span>02</span>
+              <span class="section-header__rule"></span>
+            </div>
+            <div class="section-header__titles">
+              <h2>設計能力與工具</h2>
+              <p>Skills &amp; Tools</p>
+            </div>
+            <div class="section-header__line"></div>
+          </header>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h3 class="skill-card__title skill-card__title--accent">探索 / DISCOVER</h3>
+              <ul class="skill-card__list">
+                <li>需求定義</li>
+                <li>競品分析</li>
+                <li>資訊架構規劃</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3 class="skill-card__title skill-card__title--accent">線框 / WIREFRAME</h3>
+              <ul class="skill-card__list">
+                <li>功能規劃文件</li>
+                <li>低保真線框圖</li>
+                <li>用戶流程設計</li>
+              </ul>
+            </div>
+            <div class="skill-card skill-card--bordered">
+              <h3 class="skill-card__title skill-card__title--accent">設計 / DESIGN</h3>
+              <ul class="skill-card__list">
+                <li>UI/UX 介面設計</li>
+                <li>互動原型Prototype</li>
+                <li>設計系統建構</li>
+              </ul>
+            </div>
+            <div class="skill-card skill-card--bordered">
+              <h3 class="skill-card__title skill-card__title--accent">工具 / TOOLS</h3>
+              <ul class="skill-card__list">
+                <li>Figma</li>
+                <li>Claude</li>
+                <li>VS Code</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 經歷軌跡 ===== -->
+      <section class="section" id="experience" data-name="experience-section">
+        <div class="section-inner">
+          <header class="section-header">
+            <div class="section-header__index">
+              <span>03</span>
+              <span class="section-header__rule"></span>
+            </div>
+            <div class="section-header__titles">
+              <h2>經歷軌跡</h2>
+              <p>Work Timeline</p>
+            </div>
+            <div class="section-header__line"></div>
+          </header>
+
+          <ol class="timeline">
+            <li class="timeline__entry">
+              <div class="timeline__date">2024 - 2026</div>
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <h3>UI/UX設計師</h3>
+                <p class="timeline__company">昇銳智慧科技股份有限公司</p>
+                <p class="timeline__desc">負責系統介面設計，包含考勤系統、長照系統，主導從前期需求到高保真原型的完整設計流程。</p>
+              </div>
+            </li>
+            <li class="timeline__entry">
+              <div class="timeline__date">2021 - 2024</div>
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <h3>產品企劃</h3>
+                <p class="timeline__company">樺康智雲股份有限公司</p>
+                <p class="timeline__desc">負責系統前期的架構規劃與wireframe設計，包含溫室氣體盤查平台、產品碳足跡計算平台。</p>
+              </div>
+            </li>
+            <li class="timeline__entry timeline__entry--last">
+              <div class="timeline__date">2016 - 2021</div>
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <h3>QA測試工程師</h3>
+                <p class="timeline__company">英威康科技股份有限公司</p>
+                <p class="timeline__desc">負責產品(web)的測試工作，以及test plan、操作手冊等文件撰寫。</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ===== 聯絡我 ===== -->
+      <section class="section section--contact" id="contact" data-name="contact-section">
+        <div class="section-inner">
+          <header class="section-header">
+            <div class="section-header__index">
+              <span>04</span>
+              <span class="section-header__rule"></span>
+            </div>
+            <div class="section-header__titles">
+              <h2>聯絡我</h2>
+              <p>Get In Touch</p>
+            </div>
+            <div class="section-header__line"></div>
+          </header>
+
+          <div class="contact-card">
+            <a class="contact-item" href="mailto:s90134s@hotmail.com">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2.5 5.5h15v9a1 1 0 01-1 1h-13a1 1 0 01-1-1v-9z" stroke="#0038ff" stroke-width="1.4" stroke-linejoin="round"/><path d="M3 5.5l7 5.5 7-5.5" stroke="#0038ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>s90134s@hotmail.com</span>
+            </a>
+            <a class="contact-item" href="https://www.linkedin.com/in/frankiemychen/" target="_blank" rel="noreferrer">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2" y="2" width="16" height="16" rx="2" stroke="#0038ff" stroke-width="1.4"/><path d="M6.5 8.5v6M6.5 6v.01M10 14.5v-3.5c0-1 .8-1.8 1.8-1.8s1.7.8 1.7 1.8v3.5" stroke="#0038ff" stroke-width="1.4" stroke-linecap="round"/></svg>
+              <span>https://www.linkedin.com/in/frankiemychen/</span>
+            </a>
+            <a class="contact-item" href="tel:0960587753">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 3.5h3l1.5 4-2 1.5a10 10 0 004.5 4.5l1.5-2 4 1.5v3a1 1 0 01-1 1C9.5 17 3 10.5 3 4.5a1 1 0 011-1z" stroke="#0038ff" stroke-width="1.4" stroke-linejoin="round"/></svg>
+              <span>0960-587-753</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Footer ===== -->
+      <footer class="footer">
+        <p>© 2026 Frankie Chen’s Design</p>
+        <div class="footer__brand">
+          <span class="footer__dot"></span>
+          <span>陳孟揚 Portfolio</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

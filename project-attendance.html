@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>考勤系統 專案介紹｜陳孟揚 Frankie Chen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- ===== 導覽列：品牌 + 返回首頁 ===== -->
+      <header class="detail-navbar">
+        <div class="navbar__brand">
+          <span class="navbar__dot"></span>
+          <span class="navbar__title">Frankie Chen’s Portfolio</span>
+        </div>
+        <span class="detail-navbar__divider" aria-hidden="true"></span>
+        <a class="detail-navbar__back" href="index.html">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M9 2L3 7l6 5" stroke="#0038ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          返回首頁
+        </a>
+      </header>
+
+      <!-- ===== Hero：專案視覺 + 標題 + 專案資訊 ===== -->
+      <section class="project-hero" data-name="project-hero">
+        <div class="grid-lines" aria-hidden="true"></div>
+        <div class="project-hero__content">
+          <img
+            class="project-hero__visual"
+            src="/images/attendance-detail-hero.png"
+            alt="考勤系統畫面預覽：出勤紀錄列表與班別規則設定"
+          />
+          <div class="project-hero__info">
+            <div class="project-hero__titles">
+              <h1>考勤系統</h1>
+              <p>Attendance Management System</p>
+            </div>
+            <div class="project-hero__meta">
+              <div class="meta-item">
+                <span class="meta-label">角色</span>
+                <span class="meta-value">UI/UX 設計師</span>
+              </div>
+              <span class="meta-divider" aria-hidden="true"></span>
+              <div class="meta-item">
+                <span class="meta-label">時間</span>
+                <span class="meta-value">2025</span>
+              </div>
+              <span class="meta-divider" aria-hidden="true"></span>
+              <div class="meta-item">
+                <span class="meta-label">類型</span>
+                <span class="meta-value">Web端應用程式</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 專案概述 ===== -->
+      <section class="section" id="overview">
+        <div class="section-inner">
+          <header class="section-header">
+            <div class="section-header__index">
+              <span>01</span>
+              <span class="section-header__rule"></span>
+            </div>
+            <div class="section-header__titles">
+              <h2>專案概述</h2>
+              <p>Project Overview</p>
+            </div>
+            <div class="section-header__line"></div>
+          </header>
+
+          <div class="overview-grid">
+            <h3 class="overview-grid__title">與人臉辨識機結合的<br />出缺勤管理系統</h3>
+            <div class="overview-grid__body">
+              <p>當人員進行人臉辨識時，會自動將紀錄傳至系統，HR或管理員可省去從ERP或其它後台找尋數據的困擾。</p>
+              <p>企業在管理員工出勤時，面臨排班複雜、工時計算繁瑣、資訊分散等問題。本專案目標是設計一套直覺易用的管理介面，讓 HR 與管理員能有效率地處理出勤相關事務。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 設計過程 ===== -->
+      <section class="section section--tint" id="process">
+        <div class="section-inner">
+          <header class="section-header">
+            <div class="section-header__index">
+              <span>02</span>
+              <span class="section-header__rule"></span>
+            </div>
+            <div class="section-header__titles">
+              <h2>設計過程</h2>
+              <p>Design Process</p>
+            </div>
+            <div class="section-header__line"></div>
+          </header>
+
+          <div class="process-grid">
+            <article class="process-card">
+              <div class="process-card__top">
+                <span class="process-card__num">01</span>
+                <span class="process-card__dot"></span>
+              </div>
+              <h3>研究 RESEARCH</h3>
+              <p>研究其他市面上的考勤系統，思考除了目前主流功能以外，還可以加入哪些額外吸引客戶的賣點。</p>
+            </article>
+            <article class="process-card">
+              <div class="process-card__top">
+                <span class="process-card__num">02</span>
+                <span class="process-card__dot"></span>
+              </div>
+              <h3>定義 DEFINE</h3>
+              <p>整理系統模組，規劃清晰的頁面層級與導航結構，降低認知負荷。</p>
+            </article>
+            <article class="process-card">
+              <div class="process-card__top">
+                <span class="process-card__num">03</span>
+                <span class="process-card__dot"></span>
+              </div>
+              <h3>設計 DESIGN</h3>
+              <p>設計符合企業風格的視覺系統，強化數據可視化與狀態回饋。</p>
+            </article>
+            <article class="process-card">
+              <div class="process-card__top">
+                <span class="process-card__num">04</span>
+                <span class="process-card__dot"></span>
+              </div>
+              <h3>測試 TEST</h3>
+              <p>進行嚴謹的可用性測試，依據測試數據進行多輪界面與按鈕觸及交互迭代優化。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 技術細節 ===== -->
+      <section class="section" id="tech">
+        <div class="section-inner">
+          <header class="section-header">
+            <div class="section-header__index">
+              <span>03</span>
+              <span class="section-header__rule"></span>
+            </div>
+            <div class="section-header__titles">
+              <h2>技術細節</h2>
+              <p>Tech Stack &amp; Challenges</p>
+            </div>
+            <div class="section-header__line"></div>
+          </header>
+
+          <div class="tech-grid">
+            <div class="tech-tools">
+              <h3>使用的技術與工具</h3>
+              <div class="tech-tools__tags">
+                <span class="tag tag--lg">Figma</span>
+                <span class="tag tag--lg">FigJam</span>
+                <span class="tag tag--lg">Drawio</span>
+                <span class="tag tag--lg">Sitemap</span>
+              </div>
+            </div>
+            <div class="tech-challenge">
+              <h3>技術挑戰</h3>
+              <p>班別的多樣性（日班、輪班、排班制），每個班別的上下班時間不一致，導致在計算出勤狀態時容易有時間混亂的情況。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 下一個專案 ===== -->
+      <section class="section section--tint next-project">
+        <div class="section-inner">
+          <p class="next-project__label">NEXT PROJECT</p>
+          <a class="next-project__card" href="project-mahjong.html">
+            <div class="next-project__titles">
+              <h3>麻將計分器</h3>
+              <p>Mahjong Score Counter</p>
+            </div>
+            <span class="next-project__link">
+              瀏覽專案
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <path d="M7 4l5 5-5 5" stroke="#0038ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ===== Footer ===== -->
+      <footer class="footer">
+        <p>© 2026 Frankie Chen’s Design</p>
+        <div class="footer__brand">
+          <span class="footer__dot"></span>
+          <span>陳孟揚 Portfolio</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

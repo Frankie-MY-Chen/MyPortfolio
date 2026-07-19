@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>麻將計分器 專案介紹｜陳孟揚 Frankie Chen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- ===== 導覽列：品牌 + 返回首頁 ===== -->
+      <header class="detail-navbar">
+        <div class="navbar__brand">
+          <span class="navbar__dot"></span>
+          <span class="navbar__title">Frankie Chen’s Portfolio</span>
+        </div>
+        <span class="detail-navbar__divider" aria-hidden="true"></span>
+        <a class="detail-navbar__back" href="index.html">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M9 2L3 7l6 5" stroke="#0038ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          返回首頁
+        </a>
+      </header>
+
+      <!-- ===== Hero：專案視覺 + 標題 + 專案資訊 ===== -->
+      <section class="project-hero" data-name="project-hero">
+        <div class="grid-lines" aria-hidden="true"></div>
+        <div class="project-hero__content">
+          <img
+            class="project-hero__visual"
+            src="/images/mahjong-detail-hero.png"
+            alt="麻將計分器 App 畫面預覽：開始畫面與結算排行榜"
+          />
+          <div class="project-hero__info">
+            <div class="project-hero__titles">
+              <h1>麻將計分器</h1>
+              <p>Mahjong Score Counter</p>
+            </div>
+            <div class="project-hero__meta">
+              <div class="meta-item">
+                <span class="meta-label">角色</span>
+                <span class="meta-value">UI/UX 設計師</span>
+              </div>
+              <span class="meta-divider" aria-hidden="true"></span>
+              <div class="meta-item">
+                <span class="meta-label">時間</span>
+                <span class="meta-value">2026</span>
+              </div>
+              <span class="meta-divider" aria-hidden="true"></span>
+              <div class="meta-item">
+                <span class="meta-label">類型</span>
+                <span class="meta-value">Web 應用程式（Web App）</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 專案概述 ===== -->
+      <section class="section" id="overview">
+        <div class="section-inner">
+          <header class="section-header">
+            <div class="section-header__index">
+              <span>01</span>
+              <span class="section-header__rule"></span>
+            </div>
+            <div class="section-header__titles">
+              <h2>專案概述</h2>
+              <p>Project Overview</p>
+            </div>
+            <div class="section-header__line"></div>
+          </header>
+
+          <div class="overview-grid">
+            <h3 class="overview-grid__title">一套可以簡單記錄金額<br />與胡牌、放槍等次數的系統</h3>
+            <div class="overview-grid__body">
+              <p>這是一個從前期構想、中期設計，到後期部屬上線，都由我「一人」所做的完整專案。</p>
+              <p>可以簡單記錄每局的胡牌、放槍或自摸人員，並統計次數。此外還可以記錄每將打完四個人的輸贏金額，最後結束遊戲時呈現今天遊玩下來的結算排行榜。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 設計過程 ===== -->
+      <section class="section section--tint" id="process">
+        <div class="section-inner">
+          <header class="section-header">
+            <div class="section-header__index">
+              <span>02</span>
+              <span class="section-header__rule"></span>
+            </div>
+            <div class="section-header__titles">
+              <h2>設計過程</h2>
+              <p>Design Process</p>
+            </div>
+            <div class="section-header__line"></div>
+          </header>
+
+          <div class="process-grid">
+            <article class="process-card">
+              <div class="process-card__top">
+                <span class="process-card__num">01</span>
+                <span class="process-card__dot"></span>
+              </div>
+              <h3>構想 CONCEPT</h3>
+              <p>思考整套系統需要的模組與功能，並產出規劃文件。</p>
+            </article>
+            <article class="process-card">
+              <div class="process-card__top">
+                <span class="process-card__num">02</span>
+                <span class="process-card__dot"></span>
+              </div>
+              <h3>線框稿 WIREFRAME</h3>
+              <p>將規劃文件提供給AI，請AI工具協助產出線框稿，並隨時溝通修正。</p>
+            </article>
+            <article class="process-card">
+              <div class="process-card__top">
+                <span class="process-card__num">03</span>
+                <span class="process-card__dot"></span>
+              </div>
+              <h3>設計 DESIGN</h3>
+              <p>建構完備的元件設計系統。進行中高保真介面刻畫。</p>
+            </article>
+            <article class="process-card">
+              <div class="process-card__top">
+                <span class="process-card__num">04</span>
+                <span class="process-card__dot"></span>
+              </div>
+              <h3>部屬 DEPLOY</h3>
+              <p>請AI工具協助將系統建置在雲端網頁託管與開發平台。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 設計展示 ===== -->
+      <section class="section" id="showcase">
+        <div class="section-inner">
+          <header class="section-header">
+            <div class="section-header__index">
+              <span>03</span>
+              <span class="section-header__rule"></span>
+            </div>
+            <div class="section-header__titles">
+              <h2>設計展示</h2>
+              <p>Design Deliverables</p>
+            </div>
+            <div class="section-header__line"></div>
+          </header>
+
+          <div class="showcase-list">
+            <div class="showcase-row">
+              <img class="showcase-row__media" src="/images/mahjong-showcase-stats.png" alt="即時次數統計介面：本將紀錄、記錄胡牌與記錄自摸" />
+              <div class="showcase-row__text">
+                <h3>即時次數統計與記錄</h3>
+                <p>每局完畢後立即進行胡牌、放槍或自摸的記錄，儀錶板清楚顯示四個人當前的各項次數統計，以及行為紀錄。</p>
+              </div>
+            </div>
+            <div class="showcase-row showcase-row--reverse">
+              <img class="showcase-row__media" src="/images/mahjong-showcase-ranking.png" alt="結算排行榜介面：風雲榜與榮譽牆" />
+              <div class="showcase-row__text">
+                <h3>結算排行榜</h3>
+                <p>遊戲結束後，系統自動統計最終金額、次數等，並進行排名。以及根據次數統計出放槍王、胡牌王等等，增加趣味性。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 技術細節 ===== -->
+      <section class="section section--tint" id="tech">
+        <div class="section-inner">
+          <header class="section-header">
+            <div class="section-header__index">
+              <span>04</span>
+              <span class="section-header__rule"></span>
+            </div>
+            <div class="section-header__titles">
+              <h2>技術細節</h2>
+              <p>Tech Stack &amp; Challenges</p>
+            </div>
+            <div class="section-header__line"></div>
+          </header>
+
+          <div class="tech-grid">
+            <div class="tech-tools">
+              <h3>使用的技術與工具</h3>
+              <div class="tech-tools__tags">
+                <span class="tag tag--lg">Figma</span>
+                <span class="tag tag--lg">Claude</span>
+                <span class="tag tag--lg">VS Code</span>
+                <span class="tag tag--lg">Supabase</span>
+                <span class="tag tag--lg">Netlify</span>
+              </div>
+            </div>
+            <div class="tech-challenge">
+              <h3>技術挑戰與解決方法</h3>
+              <p>我希望除了記錄者以外，其他人也能「即時」查詢當下的次數統計與分數，這部分就需要有「後端」幫忙建置後台、儲存資料，但後端不是我熟悉的領域。</p>
+              <p>另外，系統也需要有網域才能供大家使用，否則永遠只是在本機端運作。</p>
+              <p class="tech-challenge__solution">我使用AI協作工具：Claude + VS Code，利用Prompt提示詞，一步一步請AI幫我做好後台的建置，以及雲端網頁的部屬。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 下一個專案 ===== -->
+      <section class="section next-project">
+        <div class="section-inner">
+          <p class="next-project__label">NEXT PROJECT</p>
+          <a class="next-project__card" href="works-overview.html">
+            <div class="next-project__titles">
+              <h3>其他作品</h3>
+              <p>Other Projects</p>
+            </div>
+            <span class="next-project__link">
+              瀏覽專案
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <path d="M7 4l5 5-5 5" stroke="#0038ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ===== Footer ===== -->
+      <footer class="footer">
+        <p>© 2026 Frankie Chen’s Design</p>
+        <div class="footer__brand">
+          <span class="footer__dot"></span>
+          <span>陳孟揚 Portfolio</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
