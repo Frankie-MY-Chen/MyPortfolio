@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(npm -v)",
-      "mcp__claude_ai_Figma__download_assets"
-    ]
-  }
-}
